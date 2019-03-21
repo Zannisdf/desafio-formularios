@@ -1,0 +1,28 @@
+<% if notice.present? %>
+  <%= notice %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Detail</th>
+      <th>Category</th>
+      <th>Value</th>
+      <th>Discount</th>
+      <th>Tax</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @sale.detail %></td>
+      <td><%= @sale.category %></td>
+      <td><%= @sale.value %></td>
+      <td><%= @sale.discount %></td>
+      <td><%= @sale.tax %></td>
+      <td><%= @sale.total %></td>
+    </tr>
+  </tbody>
+</table>
+
+<%= link_to 'Volver', root_path %>
